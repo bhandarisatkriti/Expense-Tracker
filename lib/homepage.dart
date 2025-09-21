@@ -16,6 +16,8 @@ class _HomePageState extends State<HomePage> {
   List<Map<String, dynamic>> transactions = [];
   int _selectedIndex = 1;
 
+  bool notificationsEnabled = false; // Only toggle state
+
   @override
   void initState() {
     super.initState();
@@ -36,12 +38,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  // Delete transaction and log history
   void deleteTransaction(int index) async {
     var box = Hive.box('transactions');
     var deletedItem = Map<String, dynamic>.from(box.getAt(index));
 
-    // Save delete action to history
     var historyBox = await Hive.openBox('historyBox');
     await historyBox.add({
       "action": "Deleted",
@@ -244,6 +244,19 @@ class _HomePageState extends State<HomePage> {
                   Navigator.pop(context);
                 },
               ),
+
+              // Notification toggle (UI only)
+              SwitchListTile(
+                title: const Text('Notifications'),
+                secondary: const Icon(Icons.notifications),
+                value: notificationsEnabled,
+                onChanged: (bool value) {
+                  setState(() {
+                    notificationsEnabled = value;
+                  });
+                },
+              ),
+
               ListTile(
                 leading: const Icon(Icons.history),
                 title: const Text('History'),
