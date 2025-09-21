@@ -35,10 +35,8 @@ https://github.com/user-attachments/assets/5e12a2f4-70d6-49a1-bc57-a960d630a016
 
 
 Future Improvements
+
 🔐 Encrypt stored passwords
 🗂️ Support multiple Hive boxes for user profiles
 🛡️ Add biometric authentication (fingerprint/face unlock)
 🌍 Add localization (multi-language support)
-Rounded form cards
-
-Styled buttons
