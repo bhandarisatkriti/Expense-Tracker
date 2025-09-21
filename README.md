@@ -1,4 +1,5 @@
 Flutter Hive Login Demo
+
 A simple Flutter authentication app built as our first college project, using Hive (NoSQL local database) for storing user credentials locally on the device.
 
 This app demonstrates:
@@ -28,8 +29,8 @@ Rounded form cards
 Styled buttons
 
 
-https://github.com/user-attachments/assets/49716e70-a554-4cfc-ba94-2bf0a858d0b5
 
+https://github.com/user-attachments/assets/5e12a2f4-70d6-49a1-bc57-a960d630a016
 
 
 
