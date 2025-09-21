@@ -1,16 +1,43 @@
-# project_1
+Flutter Hive Login Demo
+A simple Flutter authentication app built as our first college project, using Hive (NoSQL local database) for storing user credentials locally on the device.
 
-A new Flutter project.
+This app demonstrates:
+🔑 Sign up (store username & password in Hive)
+🔓 Login (validate from Hive)
+🏠 Navigate to Home Page after login
+🎨 Modern UI with gradients, rounded inputs, and error/success messages
+💾 Persistent storage (data stays even after app restart)
 
-## Getting Started
+🚀 Features
 
-This project is a starting point for a Flutter application.
+Local Auth with Hive
+Data is saved in Hive box named users
+Users stay saved even after app restarts
 
-A few resources to get you started if this is your first Flutter project:
+Sign Up / Login Pages
+Username + Password fields
+Error handling for empty input, existing users, and wrong password
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Home Page
+Welcomes logged-in user
+Logout option
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Beautiful UI
+Gradient background
+Rounded form cards
+Styled buttons
+
+
+https://github.com/user-attachments/assets/49716e70-a554-4cfc-ba94-2bf0a858d0b5
+
+
+
+
+Future Improvements
+🔐 Encrypt stored passwords
+🗂️ Support multiple Hive boxes for user profiles
+🛡️ Add biometric authentication (fingerprint/face unlock)
+🌍 Add localization (multi-language support)
+Rounded form cards
+
+Styled buttons
